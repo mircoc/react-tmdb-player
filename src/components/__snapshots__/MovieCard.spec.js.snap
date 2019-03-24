@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing MovieCard component should be equal to snapshot 1`] = `
+<MovieCard
+  id="test"
+  imageUrl=""
+  itemType="MOVIE"
+  title="mytitle"
+>
+  <Card
+    as="div"
+    body={false}
+    className="bg-dark text-white card"
+    onClick={[Function]}
+  >
+    <div
+      className="bg-dark text-white card card"
+      onClick={[Function]}
+    >
+      <CardImg
+        alt="mytitle"
+        as="img"
+        src=""
+        variant={null}
+      >
+        <img
+          alt="mytitle"
+          className="card-img"
+          src=""
+        />
+      </CardImg>
+      <CardImgOverlay>
+        <div
+          className="card-img-overlay"
+        >
+          <CardTitle>
+            <ForwardRef
+              className="card-title"
+            >
+              <div
+                className="card-title h5"
+              >
+                mytitle
+              </div>
+            </ForwardRef>
+          </CardTitle>
+        </div>
+      </CardImgOverlay>
+    </div>
+  </Card>
+</MovieCard>
+`;

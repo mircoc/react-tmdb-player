@@ -6,7 +6,7 @@ import {withRouter} from 'react-router-dom'
 import style from './MovieCard.module.css'
 import { getRouteForDetail } from '../configs/routes';
 
-const MovieCard = props => {
+export const MovieCard = props => {
   const {
     imageUrl,
     title,
