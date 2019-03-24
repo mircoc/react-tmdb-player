@@ -1,14 +1,14 @@
 {
   "main.css": "/react-tmdb-player/static/css/main.c993529a.chunk.css",
-  "main.js": "/react-tmdb-player/static/js/main.dc7eb568.chunk.js",
-  "main.js.map": "/react-tmdb-player/static/js/main.dc7eb568.chunk.js.map",
+  "main.js": "/react-tmdb-player/static/js/main.f12165ac.chunk.js",
+  "main.js.map": "/react-tmdb-player/static/js/main.f12165ac.chunk.js.map",
   "runtime~main.js": "/react-tmdb-player/static/js/runtime~main.38002364.js",
   "runtime~main.js.map": "/react-tmdb-player/static/js/runtime~main.38002364.js.map",
   "static/css/2.893dd009.chunk.css": "/react-tmdb-player/static/css/2.893dd009.chunk.css",
   "static/js/2.a630c545.chunk.js": "/react-tmdb-player/static/js/2.a630c545.chunk.js",
   "static/js/2.a630c545.chunk.js.map": "/react-tmdb-player/static/js/2.a630c545.chunk.js.map",
   "index.html": "/react-tmdb-player/index.html",
-  "precache-manifest.d262fce334dc911beb1ba425bd33efe1.js": "/react-tmdb-player/precache-manifest.d262fce334dc911beb1ba425bd33efe1.js",
+  "precache-manifest.2115a16bbae9c4a2bd7daa90b9a75d3f.js": "/react-tmdb-player/precache-manifest.2115a16bbae9c4a2bd7daa90b9a75d3f.js",
   "service-worker.js": "/react-tmdb-player/service-worker.js",
   "static/css/2.893dd009.chunk.css.map": "/react-tmdb-player/static/css/2.893dd009.chunk.css.map",
   "static/css/main.c993529a.chunk.css.map": "/react-tmdb-player/static/css/main.c993529a.chunk.css.map"
