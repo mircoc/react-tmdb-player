@@ -19,7 +19,7 @@ const Search = props => {
 
   const MoviCardsItems = results ? results
     .filter(item => item.poster_path && item.title)
-    .map(item => {
+    .map((item,index) => {
     return (
       <MovieCard
         imageUrl={makeImageUrl(
@@ -29,6 +29,7 @@ const Search = props => {
           )
         }
         {...item}
+        key={`mci${index}`}
       />
     )
   }) : null
