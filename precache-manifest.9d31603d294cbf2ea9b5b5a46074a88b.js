@@ -4,23 +4,23 @@ self.__precacheManifest = [
     "url": "/react-tmdb-player/static/js/runtime~main.38002364.js"
   },
   {
-    "revision": "df8b4b2d694d9e47a068",
-    "url": "/react-tmdb-player/static/js/main.4da252bf.chunk.js"
+    "revision": "45bbb781bce550f8e9cd",
+    "url": "/react-tmdb-player/static/js/main.7617b8d2.chunk.js"
   },
   {
-    "revision": "6e3977e2310da164dbc7",
-    "url": "/react-tmdb-player/static/js/2.a630c545.chunk.js"
+    "revision": "b01fb12dfcb17fb64c2c",
+    "url": "/react-tmdb-player/static/js/2.78febdbb.chunk.js"
   },
   {
-    "revision": "df8b4b2d694d9e47a068",
+    "revision": "45bbb781bce550f8e9cd",
     "url": "/react-tmdb-player/static/css/main.c993529a.chunk.css"
   },
   {
-    "revision": "6e3977e2310da164dbc7",
+    "revision": "b01fb12dfcb17fb64c2c",
     "url": "/react-tmdb-player/static/css/2.893dd009.chunk.css"
   },
   {
-    "revision": "127083eafab4191140078192b45449df",
+    "revision": "718d6747a9ec9a98647ef5e86ad900f4",
     "url": "/react-tmdb-player/index.html"
   }
 ];
