@@ -22,11 +22,75 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    
+    <!-- Shaka Player compiled library: -->
+    <script src="%PUBLIC_URL%/lib/shaka-player.compiled.js"></script>
+
+    <style media="screen" type="text/css">
+
+      body { 
+        background: #fff;
+        color: #ccc;
+      }
+
+      .bootloader {
+        position: absolute;
+        top: calc(50% - 32px);
+        left: calc(50% - 32px);
+      }
+
+      .lds-ring {
+        display: inline-block;
+        position: relative;
+        width: 64px;
+        height: 64px;
+      }
+      .lds-ring div {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        width: 51px;
+        height: 51px;
+        margin: 6px;
+        border: 6px solid #fff;
+        border-radius: 50%;
+        animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        border-color: #ccc transparent transparent transparent;
+      }
+      .lds-ring div:nth-child(1) {
+        animation-delay: -0.45s;
+      }
+      .lds-ring div:nth-child(2) {
+        animation-delay: -0.3s;
+      }
+      .lds-ring div:nth-child(3) {
+        animation-delay: -0.15s;
+      }
+      @keyframes lds-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+    </style>
+
+    <title>The Movie DB Player</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+
+      <!-- loading indicator used befor app startup-->
+      <div class="bootloader">
+        <div class="lds-ring">
+          <div></div><div></div><div></div><div></div>
+        </div>
+      </div>
+
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
