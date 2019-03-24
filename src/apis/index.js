@@ -7,6 +7,8 @@ const API_BASEURL = "https://api.themoviedb.org/3"
 
 const APIKEY = config.TMDB_APIKEY
 
+const IMSECURE = window.location.protocol === 'https:'
+
 const apiKeyPlugin = req => {
   req.query({ api_key: APIKEY })
 }
@@ -130,8 +132,7 @@ export const IMAGE_POSTER_SIZES = {
 }
 
 export const makeImageUrl = (imageUrl, size, configurationResponse) => {
-  const baseUrl = get(configurationResponse, 'images.base_url', "")
-  // const secureBaseUrl = get(configurationResponse, 'images.secure_base_url', "")
+  const baseUrl = get(configurationResponse, IMSECURE ? 'images.secure_base_url' : 'images.base_url', "")
   return `${baseUrl}${size}${imageUrl}`
 }
 
@@ -171,7 +172,8 @@ export const getSearchResult = response => {
   }, [])
 }
 
-// export const MOCK_VIDEO_URL = "//bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
+// this url is not accessible from the player so i used the demo video of shaka player
+// export const MOCK_VIDEO_URL = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
 export const MOCK_VIDEO_URL = "https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd"
 export const MOCK_VIDEO_URL_SECURE = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
 
