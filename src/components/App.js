@@ -2,7 +2,8 @@ import React from 'react'
 import {
   Route,
   BrowserRouter as Router,
-  Switch
+  Switch,
+  Redirect
 } from 'react-router-dom'
 
 import routes from '../configs/routes';
@@ -16,12 +17,15 @@ const App = props => {
   return (
       <Router>
         <Switch>
+          
           <Route exact path={[routes.SEARCH, routes.SEARCHKEYWORD]} component={Search} />
           
           <Route exact path={routes.DETAILMOVIE} render={props => <Details {...props} isMovie />} />
           <Route exact path={routes.DETAILTV} render={props => <Details {...props} isTv />} />
           <Route exact path={routes.HOME} component={Home} />
-
+          
+          <Redirect exact from="/" to={routes.HOME} />
+          
           <Route component={NotFound} />
         </Switch>
       </Router>
