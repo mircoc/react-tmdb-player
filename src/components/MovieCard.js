@@ -16,12 +16,14 @@ export const MovieCard = props => {
   } = props
 
   return (
-    <Card className={`bg-dark text-white ${style.card}`} onClick={e => {
+    <Card className={`bg-dark text-white ${style.card}`}
+    onDragStart={e => e.preventDefault()}
+    onClick={e => {
       history.push(getRouteForDetail(id, itemType))
     }}>
       <Card.Img src={imageUrl} alt={title} />
       <Card.ImgOverlay>
-        <Card.Title>{title}</Card.Title>
+        <Card.Title className={style.title}>{title}</Card.Title>
       </Card.ImgOverlay>
     </Card>
   )

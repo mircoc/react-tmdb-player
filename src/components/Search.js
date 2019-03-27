@@ -13,6 +13,8 @@ import { MdSearch } from 'react-icons/md';
 import MovieCard from './MovieCard';
 import { IMAGE_POSTER_SIZES, makeImageUrl } from '../apis';
 
+import './Search.css'
+
 const Search = props => {
   const {keyword, query, loading, results, fetchSearch, configurationTmdb} = props
   const [searchValue, setSearchValue] = React.useState(keyword || query)

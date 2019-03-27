@@ -91,7 +91,7 @@ const Detail = props => {
     </Modal>
     <Container className="m-2 pt-2">
       <Row>
-        <Col>
+        <Col xs={12} md={6} className={"order-2 order-md-1"}>
           <h1>{title}</h1>
 
           <p className="lead">
@@ -118,7 +118,7 @@ const Detail = props => {
           </Button>
 
         </Col>
-        <Col className="align-self-center"><Image src={imageUrl} thumbnail /></Col>
+        <Col xs={12} md={6} className="align-self-center order-1 order-md-2"><Image src={imageUrl} thumbnail /></Col>
       </Row>
     </Container>
     </>

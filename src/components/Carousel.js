@@ -11,6 +11,7 @@ const Carousel = props => {
     600: { items: 6 },
     1200: { items: 8 },
   }
+  // debugger
   return (
     <AliceCarousel
       items={items}
