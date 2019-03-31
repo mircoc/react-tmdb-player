@@ -25,7 +25,7 @@ const Home = props => {
         <Row>
           <MovieCarouselContainer
             title={"Family"}
-            listType={LIST_TYPES.POPULAR_SERIES}
+            listType={LIST_TYPES.MOVIES_GENRE}
             listOptions={{genre: GENRES_MOVIE.Family}}
           />
         </Row>
