@@ -9089,7 +9089,7 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-alice-carousel@^1.13.3:
+react-alice-carousel@^1.18.0:
   version "1.18.0"
   resolved "https://registry.yarnpkg.com/react-alice-carousel/-/react-alice-carousel-1.18.0.tgz#b97a63219307c3dc092f760a978c7e221a274b4a"
   integrity sha512-MUHFGfe4CmuRoLQ6a276cRirImUthEN9HNG9TLWJlDe9/oMga6fMT7LmLdjtGSyTd3l9oSG7lJp1MOxpG3pjeA==
